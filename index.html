@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<script src="./service-worker.js"></script>
+<script src="./app.js"></script>
+<link rel="manifest" href="./manifest.json">
+<body>
+    <div class="page">
+        <div class="page-header">
+            <p class="medium-light-title ml-6 bold">My PWA Application </p>
+        </div>
+        <div class="page-body d-flex">
+            <div class="main-nav">
+                <ul class="main-nav-list navMenu">
+                    <li class="main-nav-item _dashPBBlock"><a href="#/one" class="pageBtn v-center"  data-page-name="one">
+                        <div class="v-center">
+                            <div class="main-nav-item-icon">
+                                <img src="./icons/ic_profile.png" alt="one">
+                            </div>
+                            <div class="col onlyMobi">
+                                <span class="main-nav-item-text">Page One</span>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="main-nav-item _dashPBBlock"><a href="#/two" class="pageBtn v-center"  data-page-name="two">
+                        <div class="v-center">
+                            <div class="main-nav-item-icon">
+                                <img src="./icons/ic_profile.png" alt="">
+                            </div>
+                            <div class="col onlyMobi">
+                                <span class="main-nav-item-text">Page Two</span>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="main-nav-item _dashPBBlock"><a href="#/three" class="pageBtn v-center"  data-page-name="three">
+                        <div class="v-center">
+                            <div class="main-nav-item-icon">
+                                <img src="./icons/ic_profile.png" alt="">
+                            </div>
+                            <div class="col onlyMobi">
+                                <span class="main-nav-item-text">Page Three</span>
+                            </div>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="pageContent sp-holder"></div>
+        </div>
+        <div class="page-footer">
+            <p class="text-right mr-6 pr-3 bold">Powered By Venkat</p>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        startApplication();
+    });
+</script>
+</html>
